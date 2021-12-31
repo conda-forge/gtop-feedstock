@@ -23,7 +23,8 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/bin/gtop
+    - test -f $PREFIX/bin/gtop  # [unix]
+    - test -f $PREFIX/bin/gtop.exe  # [win]
 
 about:
   home: https://github.com/aksakalli/gtop
