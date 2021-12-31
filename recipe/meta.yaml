@@ -24,7 +24,7 @@ requirements:
 test:
   commands:
     - test -f $PREFIX/bin/gtop  # [unix]
-    - test -f $PREFIX/bin/gtop.exe  # [win]
+    - if not exist %LIBRARY_BIN%\\gtop.exe exit 1 # [win]
 
 about:
   home: https://github.com/aksakalli/gtop
