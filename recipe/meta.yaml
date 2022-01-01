@@ -11,7 +11,6 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
 
 requirements:
   build:
@@ -24,7 +23,7 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/bin/gtop
+    - test -f $PREFIX/bin/gtop  # [unix]
 
 about:
   home: https://github.com/aksakalli/gtop
