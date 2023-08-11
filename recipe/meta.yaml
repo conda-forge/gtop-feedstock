@@ -1,5 +1,5 @@
 {% set name = "gtop" %}
-{% set version = "1.1.3" %}
+{% set version = "1.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://registry.npmjs.org/gtop/-/gtop-{{ version }}.tgz
-  sha256: 5bd04175c5d075b58448cf4fff3a2c6a760e28807e73f4a8f1ab0adf14d7c926
+  sha256: a8e90b828e33160c6a0ac4fb11231f292496e8049c0dac814e46fdd0c90817c1
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
