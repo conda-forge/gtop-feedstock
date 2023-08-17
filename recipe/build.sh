@@ -12,8 +12,6 @@ export npm_config_build_from_source=true
 rm $PREFIX/bin/node
 ln -s $BUILD_PREFIX/bin/node $PREFIX/bin/node
 
-npm install -g ${PKG_NAME}-v${PKG_VERSION}.tgz
-
 # install gtop globally from the npm registry
 # all things coming after this are just concerned with generating the ThirdPartyLicenses.txt file
 npm install -g ${PKG_NAME}@${PKG_VERSION}
